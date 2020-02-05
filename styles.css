@@ -1,0 +1,277 @@
+:root {
+    --main-bg-color: #4071b6;
+    --main-white: #F2F2F2;
+    --main-higlight-color: #57F29A;
+    --main-dark-blue: #03588C;
+    --main-light-blue: #5080BF;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: var(--main-white);
+}
+
+body {
+    background-color: var(--main-bg-color);
+    background-image: url(recycle-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    padding: 15px 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-link {
+    padding: 0 10px;
+    color: var(--main-white);
+}
+
+.nav-logo {
+    width: 100px;
+    height: 40px;
+    background-color: var(--main-white);
+    padding: .6rem;
+    text-align: center;
+    color: var(--main-dark-blue);
+    font-weight: bold;
+}
+
+.container {
+}
+
+.main-top {
+    padding: 50px 15px;
+}
+
+.main-title {
+    font-size: 1rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.main-title span {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.main-form {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-item {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-item .email {
+    background-color: var(--main-dark-blue);
+    border-style: none;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    color: var(--main-white);
+}
+
+.form-item .email::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--main-bg-color);
+    opacity: 1; /* Firefox */
+}
+
+.form-item select {
+    background-color: var(--main-dark-blue);
+    background-image: url("downarrow.png");
+    background-repeat: no-repeat;
+    border-style: none;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: var(--main-bg-color);
+    background-position: 97%, 50%;
+}
+
+.form-item select option {
+    color: var(--main-white);
+    width: 100%;
+}
+
+.form-item button {
+    background-color: var(--main-white);
+    border-style: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: var(--main-bg-color);
+    font-weight: bold;
+    width: 50%;
+}
+
+.form-item p {
+    display: inline;
+}
+
+.main-bottom {
+    background-color: var(--main-light-blue);
+    padding-bottom: 70px;
+}
+
+.main-div {
+    display: flex;
+    padding: 0 25px;
+    flex-direction: column;
+}
+
+.number-div {
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.number-div span {
+    font-size: 4rem;
+    display: block;
+    color: #57F29A;
+    text-align: center;
+}
+
+.image-div {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    position: relative;
+}
+
+.image-div hr {
+    position: absolute;
+    transform: rotate(90deg);
+    height: 260px;
+    top: -48%;
+}
+
+.image-div img {
+    position: absolute;
+    top: 4%;
+}
+
+.leader-title {
+    font-weight: normal;
+}
+
+.board-section {
+    margin-bottom: 12px;
+    height: 24px;
+}
+
+.board-title {
+    background-color: var(--main-bg-color);
+    padding: 5px;
+    color: var(--main-dark-blue);
+    width: 85px;
+    display: inline-block;
+}
+
+footer {
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+footer div {
+    color: var(--main-dark-blue);
+}
+
+
+@media (min-width: 600px) {
+
+    body {
+        background-size: 58%;
+        background-position-x: 12%;
+    }
+
+    .main-title {
+        font-size: 2rem;
+    }
+
+    .main-title span {
+        font-size: 2rem;
+    }
+
+    .main-top {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .main-form {
+        flex-direction: row;
+    }
+
+    .form-item .email {
+        margin: 15px;
+    }
+
+    .form-item button {
+        width: 70%;
+    }
+
+    .main-div {
+        flex-direction: row;
+    }
+
+    .number-div-con {
+        padding-left: 75px;
+        width: 43%;
+    }
+
+    .image-div {
+        width: 150px;
+    }
+
+    .image-div img {
+        top: 70%;
+        width: 55%;
+    }
+
+    .image-div hr {
+        top: 9%;
+        transform: rotate(0deg);
+    }
+
+    .board {
+        width: 45%;
+        padding-left: 80px
+    }
+}
+
+
+@media (min-width: 866px) {
+    body {
+        background-size: 504px;
+    }
+}
