@@ -153,7 +153,7 @@ header {
 }
 
 .number-div span {
-    font-size: 4rem;
+    font-size: 7rem;
     display: block;
     color: #57F29A;
     text-align: center;
@@ -187,12 +187,33 @@ header {
     height: 24px;
 }
 
+.board-section .board-left {
+    width: 100%;
+}
+
+.board-section div {
+    display: inline-block;
+}
+
 .board-title {
     background-color: var(--main-bg-color);
     padding: 5px;
     color: var(--main-dark-blue);
     width: 85px;
+    border-radius: 4px 0 0 4px;
+    font-weight: bold;
+}
+
+.dis-board-display {
+    width: 0%;
     display: inline-block;
+    height: 29px;
+    background-color: var(--main-dark-blue);
+    /* content: ''; */
+    border-radius: 0 4px 4px 0;
+    margin-bottom: -9px;
+    max-width: 290px;
+    transition: width 1s linear 1s;
 }
 
 footer {
@@ -208,7 +229,7 @@ footer div {
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
 
     body {
         background-size: 58%;
@@ -265,7 +286,7 @@ footer div {
 
     .board {
         width: 45%;
-        padding-left: 80px
+        padding-left: 0;
     }
 }
 
